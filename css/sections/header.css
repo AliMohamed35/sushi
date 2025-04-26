@@ -1,0 +1,64 @@
+.header__nav {
+    display: flex;
+    overflow: hidden;
+    /*why*/
+}
+
+.header__logo {
+    flex: 1;
+    display: flex;
+    /*why*/
+    position: relative;
+    padding: 20px;
+}
+
+.header__logo-overlay {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100%;
+    inset: 0;
+    /*what*/
+    z-index: -1;
+}
+
+.header__logo h4 {
+    color: white;
+    font-family: var(--playfair-display);
+    padding: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.header__menu,
+.header__menu-mobile {
+    display: flex;
+    flex: 1.236;
+    gap: 64px;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.header__menu li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.header__menu img {
+    object-fit: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.header__menu-mobile {
+    display: none;
+    gap: 20px;
+    position: relative;
+}
